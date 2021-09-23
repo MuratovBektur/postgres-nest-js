@@ -1,0 +1,5 @@
+git pull;
+docker-compose -f docker-compose.prod.yml down;
+docker-compose -f docker-compose.prod.yml up -d --build;
+npm run build
+npm run start
